@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('./style_guide/theme.css');
+
+:root{
+    font-family: 'Manrope', sans-serif !important;
+
+    
+}
+
+body {
+    background-color: var(--md-sys-color-surface) !important;
+    color: var(--md-sys-color-on-surface) !important;
+    overflow: none;
+}
+
+/* HEADER */
+
+header a.nav-link{
+    color: var(--md-sys-color-on-surface) !important; 
+}
+header a.nav-link.active{
+    color: var(--md-sys-color-primary) !important; 
+}
+
+#logo {
+    max-width: calc(40px + 5%) !important;
+}
+#CTA {
+    background-color: var(--md-sys-color-primary) !important;
+    color: var(--md-sys-color-on-primary) !important;
+}
+
+#CTA:hover {
+    background-color: var(--md-ref-palette-primary30) !important;
+}
+
+.navbar-toggler{
+    /* fill: var(--md-sys-color-surface) !important ; */
+    background-color: var(--md-sys-color-surface-variant) !important;
+}
+
+/* HEADER */
+
+
+/* HERO SECTION */
+
+#hero{
+    position: relative !important;
+    align-items: center !important;
+    overflow: none !important;
+}
+
+#hero h1{
+    color: var(--md-sys-color-on-surface) !important;
+    font-size: calc(48px + 2vw);
+    margin-top: 72px !important;
+}
+
+#hero .image-section{
+    position: relative;
+    overflow: none;
+    
+}
+
+/* #hero .image-section > img{
+    
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: calc(300px + 10vw);
+    
+} */
+
+#hero .image-section > svg{
+    /* background-image: url(./images/hero.png) !important; */
+    position: absolute;
+    width: calc(300px + 20vw) !important;
+    max-height: 670px;
+    right: 0px;
+    top: -10px;
+    z-index: -10;
+}
