@@ -6,55 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
     <script defer src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="container-lg">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <a class="navbar-brand py-3" href="#">
-                <img id="logo" src="./image/logo.png" alt="Daniel B logo" >
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-lg-auto">
-                  <a class="nav-link active text-center me-lg-3" aria-current="page" href="#">Home</a>
-                  <a class="nav-link text-center me-lg-3" href="#">My Bio</a>
-                  <a class="nav-link text-center me-lg-3" href="#">Impact</a>
-                  <a class="nav-link text-center me-lg-3" href="#">Blog</a>
-                  <a class="nav-link btn btn-primary link-light" id="CTA">Work with me</a>
-                </div>
+  <header class="container-lg">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand py-3" href="#">
+              <img id="logo" src="./image/logo.png" alt="Daniel B logo" >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-lg-auto">
+                <a class="nav-link active text-center me-lg-3" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-center me-lg-3" href="#">My Bio</a>
+                <a class="nav-link text-center me-lg-3" href="#">Impact</a>
+                <a class="nav-link text-center me-lg-3" href="#">Blog</a>
+                <a class="nav-link btn btn-primary link-light" id="CTA">Work with me</a>
               </div>
             </div>
-        </nav>
-    </header>
+          </div>
+      </nav>
+  </header>
 
 
-     <!-- Hero Section -->
-    <div id="hero" class="container-lg">
-        <div class="row justify-content-xl-center pb-lg-3">
-            <div class=" col-xl-6 col-md-7 col-sm-12 content">
-                <h1 class=" pb-2 fw-normal">Discover and unleash your true potential.</h1>
-                <p class="pb-2">I’m Daniel Bamigbayan.
-                    I help individuals and businesses reach their full potential.
-                    Work with me and together, we will scale up your business or startup and improve your business processes.
-                </p>
-                <button class="btn btn-primary btn-lg">Work with me</button>
-            </div>
-            <div class="col-xl-6 col-md-5 col-sm-12 justify-content-center image-section">
-                <img class="img-fluid ms-5" src="./image/hero.png" alt="">    
-                <!-- <img src="./image/hero.png" alt=""> -->
-                <svg max-width="635" max-height="640" viewBox="0 0 635 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M156.279 274.572L599.761 -12.0655L556.541 -79L0 280.712L339.921 464.333L55.9881 631.102L488.783 896L530.348 828.024L210.913 632.51L421.872 508.602L734 677.21L598.999 312.163L420.237 417.159L156.279 274.572ZM502.189 461.428L586.022 506.714L557.303 429.057L502.189 461.428Z" fill="#3F64FD"/>
-                </svg>
-                
-            </div>
-        </div>
+  <!-- Hero Section -->
+  <div id="hero" class="container-lg pb-lg-0 pb-sm-3">
+      <div class="row justify-content-xl-center pb-lg-3">
+          <div class=" col-xl-6 col-md-7 col-sm-12 content">
+              <h1 class=" pb-2 pt-4 fw-normal">Discover and unleash your true potential.</h1>
+              <p class="pb-2">I’m Daniel Bamigbayan.
+                  I help individuals and businesses reach their full potential.
+                  Work with me and together, we will scale up your business or startup and improve your business processes.
+              </p>
+              <button class="btn btn-primary btn-lg">Work with me</button>
+          </div>
+          <div class="col-xl-6 col-md-5 col-sm-12 justify-content-center image-section">
+              <img class="img-fluid ms-5" src="./image/hero.png" alt="">    
+              <!-- <img src="./image/hero.png" alt=""> -->
+              <svg max-width="635" max-height="640" viewBox="0 0 635 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M156.279 274.572L599.761 -12.0655L556.541 -79L0 280.712L339.921 464.333L55.9881 631.102L488.783 896L530.348 828.024L210.913 632.51L421.872 508.602L734 677.21L598.999 312.163L420.237 417.159L156.279 274.572ZM502.189 461.428L586.022 506.714L557.303 429.057L502.189 461.428Z" fill="#3F64FD"/>
+              </svg>
+              
+          </div>
+      </div>
+  </div>
+
+  <!-- End of Hero Section -->
+
+  <!-- Making Impact -->
+  <div id="makingImpact" class=" container-fluid py-5 justify-content-center">
+    <h2 class="mb-2 display-5 mb-5 container-lg">Making impact</h2>
+    <div class="container-lg">
+      <div class="row justify-content-center g-4">
+        <a href="#" class="col-12 col-md-4 p-5 p-md-4 tile">
+          <div class=" icons d-flex justify-content-center align-items-center rounded-circle mb-3 my-lg-4 mb-mb-4">
+            <i class="fa-solid fa-person-chalkboard fs-3"></i>
+          </div>
+          <h4 class="fs-2 mb-4">
+            Mentorship programme.
+          </h4>
+          <p>
+            Pellentesque odio aliquam vitae amet, elementum at urna facilisis purus,
+             integer nam libero pharetra viverra et dolor tellus, eget commodo tellus tempus vitae.
+          </p>
+          <button class="learnMore px-3 py-2">Learn more <i class="bi bi-arrow-right-circle ms-2"></i> </button>
+        </a>
+        <a href="#" class="col-12 col-md-4 p-5 p-md-4 tile">
+          <div class=" icons d-flex justify-content-center align-items-center rounded-circle mb-3 my-lg-4 mb-mb-4">
+            <i class="bi bi-person-workspace fs-3"></i>
+          </div>
+          <h4 class="fs-2 mb-4">
+            Moment with Daniel B.
+          </h4>
+          <p class="">
+            Pellentesque odio aliquam vitae amet, elementum at urna facilisis purus,
+             integer nam libero pharetra viverra et dolor tellus, eget commodo tellus tempus vitae.
+          </p>
+          <button class="learnMore px-3 py-2">Learn more <i class="bi bi-arrow-right-circle ms-2"></i> </button>
+        </a>
+        <a href="#" class="col-12 col-md-4 p-5 p-md-4 tile">
+          <div class=" icons d-flex justify-content-center align-items-center rounded-circle mb-3 my-lg-4 mb-mb-4">
+            <i class="fa-regular fa-user-clock fs-4"></i>
+            
+          </div>
+          <h4 class="fs-2 mb-4">
+            Book consultation session.
+          </h4>
+          <p>
+            Pellentesque odio aliquam vitae amet, elementum at urna facilisis purus,
+             integer nam libero pharetra viverra et dolor tellus, eget commodo tellus tempus vitae.
+          </p>
+          <button class="learnMore px-3 py-2">Learn more <i class="bi bi-arrow-right-circle ms-2"></i> </button>
+        </a>
+      </div>
     </div>
+     
+  </div>
+  <!-- End of Making Impact -->
+
+
 
     
 </body>

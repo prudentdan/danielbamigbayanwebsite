@@ -54,7 +54,7 @@ header a.nav-link.active{
 #hero h1{
     color: var(--md-sys-color-on-surface) !important;
     font-size: calc(48px + 2vw);
-    margin-top: 72px !important;
+    
 }
 
 #hero .image-section{
@@ -81,3 +81,65 @@ header a.nav-link.active{
     top: -10px;
     z-index: -10;
 }
+
+#makingImpact{
+    background-color: var(--md-sys-color-on-background);
+    color: var(--md-sys-color-background);
+}
+
+#makingImpact .tile{
+    border: 1px solid var(--md-sys-color-outline);
+    text-decoration: none;
+    color: var(--md-sys-color-surface);
+}
+#makingImpact .tile:hover{
+    background-color: var(--md-sys-color-tertiary);
+
+}
+#makingImpact .tile:hover .icons{
+    color: var(--md-sys-color-tertiary);
+}
+
+
+
+.tile:hover .learnMore i {
+    transform: rotate(-45deg) !important;
+    -webkit-transform: rotate(-45deg) !important;
+    -ms-transform: rotate(-45deg) !important;
+}
+ 
+
+#makingImpact .tile:nth-child(2){
+    background-color: var(--md-sys-color-primary);
+    
+}
+#makingImpact .tile:nth-child(2):hover{
+    background-color: var(--md-sys-color-tertiary);
+    
+}
+
+#makingImpact .icons {
+    background-color: var(--md-sys-color-background);
+    width: 64px !important;
+    height: 64px !important;
+    color:  var(--md-sys-color-on-background);
+    /* margin-bottom: 20px; */
+}
+
+#makingImpact .tile:nth-child(2) .icons {
+    background-color: var(--md-sys-color-on-primary);
+    color: var(--md-sys-color-primary);
+    
+}
+#makingImpact .tile:nth-child(2):hover .icons {
+    color: var(--md-sys-color-tertiary);
+    
+}
+
+#makingImpact .tile .learnMore {
+    background-color: transparent;
+    border: 1px solid var(--md-sys-color-outline);
+    color: var(--md-sys-color-surface-variant);
+    margin-top: auto !important;
+}
+
