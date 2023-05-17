@@ -24,7 +24,7 @@ header a.nav-link.active{
 }
 
 #logo {
-    max-width: calc(40px + 5%) !important;
+    max-width: calc(48px + 4vw) !important;
 }
 #CTA {
     background-color: var(--md-sys-color-primary) !important;
@@ -82,64 +82,160 @@ header a.nav-link.active{
     z-index: -10;
 }
 
+
+/* MAKING IMPACT */
+
 #makingImpact{
-    background-color: var(--md-sys-color-on-background);
-    color: var(--md-sys-color-background);
+    background-color: #1B1B1F;
+    color: #FFFF;
+}
+
+#makingImpact h2:first-child{
+    padding: 0;
+    color: #FFF;
 }
 
 #makingImpact .tile{
     border: 1px solid var(--md-sys-color-outline);
     text-decoration: none;
-    color: var(--md-sys-color-surface);
-}
-#makingImpact .tile:hover{
-    background-color: var(--md-sys-color-tertiary);
-
-}
-#makingImpact .tile:hover .icons{
-    color: var(--md-sys-color-tertiary);
-}
-
-
-
-.tile:hover .learnMore i {
-    transform: rotate(-45deg) !important;
-    -webkit-transform: rotate(-45deg) !important;
-    -ms-transform: rotate(-45deg) !important;
-}
- 
-
-#makingImpact .tile:nth-child(2){
-    background-color: var(--md-sys-color-primary);
-    
-}
-#makingImpact .tile:nth-child(2):hover{
-    background-color: var(--md-sys-color-tertiary);
+    color: #FFF;
     
 }
 
 #makingImpact .icons {
-    background-color: var(--md-sys-color-background);
+    background-color: var(--md-sys-color-surface);
     width: 64px !important;
     height: 64px !important;
-    color:  var(--md-sys-color-on-background);
+    color:  var(--md-sys-color-on-surface);
     /* margin-bottom: 20px; */
-}
-
-#makingImpact .tile:nth-child(2) .icons {
-    background-color: var(--md-sys-color-on-primary);
-    color: var(--md-sys-color-primary);
-    
-}
-#makingImpact .tile:nth-child(2):hover .icons {
-    color: var(--md-sys-color-tertiary);
-    
 }
 
 #makingImpact .tile .learnMore {
     background-color: transparent;
     border: 1px solid var(--md-sys-color-outline);
-    color: var(--md-sys-color-surface-variant);
+    color: #FFF;
     margin-top: auto !important;
 }
 
+#makingImpact .tile:hover{
+    background-color: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+    
+}
+
+
+#makingImpact .tile:hover .icons{
+    background-color: var(--md-sys-color-on-surface);
+    color: var(--md-sys-color-on-tertiary-fixed-dim);
+}
+
+#makingImpact .tile:hover .learnMore{
+    
+    color: var(--md-sys-color-on-secondary);
+}
+
+ 
+
+#makingImpact .tile:nth-child(2){
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-secondary);
+    
+}
+#makingImpact .tile:nth-child(2):hover{
+    background-color: var(--md-sys-color-tertiary);
+}
+
+
+#makingImpact .tile:nth-child(2) .icons {
+    background-color: var(--md-sys-color-on-secondary);
+    color: var(--md-sys-color-secondary);
+    
+}
+
+#makingImpact .tile:nth-child(2) .learnMore {
+    color: var(--md-sys-color-on-secondary);
+    
+}
+
+#makingImpact .tile:nth-child(2):hover .icons {
+    color: var(--md-sys-color-tertiary);
+    
+}
+
+
+
+/* Services */
+
+#services p:first-child{
+    color: var(--md-sys-color-primary);
+}
+
+#services p:last-of-type {
+    color: var(--md-sys-color-outline);
+}
+
+
+/* ABOUT */
+
+
+#aboutD a{
+    width: fit-content;
+    background-color: transparent;
+    color: var(--md-sys-color-on-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    text-decoration: none;
+}
+#aboutD img{
+    aspect-ratio: 5/4 ;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#aboutD a:hover{
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-primary);
+}
+
+
+/* IN-TOUCH */
+
+#In-Touch .content-section{
+    background-color: var(--md-sys-color-on-primary-fixed-variant);
+    background-image: url(./image/Vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--md-sys-color-primary-fixed);
+}
+
+/* Footer */
+
+#footer {
+    background-color: #1B1B1F;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: #d2d2d2;
+    font-size: calc(16px);
+}
+#footer a:hover{
+    /* text-decoration: underline; */
+    color: var(--md-sys-color-primary-fixed-dim);
+}
+
+#footer .image-box{
+    max-width: 75px;
+}
+
+#footer .links a:first-of-type{
+    font-size: 14px;
+    color: #797979;
+}
+
+#footer .media i{
+    font-size: 28px;
+    margin-right: 12px;
+}
