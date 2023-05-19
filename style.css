@@ -11,7 +11,7 @@
 body {
     background-color: var(--md-sys-color-surface) !important;
     color: var(--md-sys-color-on-surface) !important;
-    overflow: none;
+    
 }
 
 /* HEADER */
@@ -188,7 +188,7 @@ header a.nav-link.active{
 #aboutD img{
     aspect-ratio: 5/4 ;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
 
 
@@ -256,4 +256,99 @@ header a.nav-link.active{
 
 #quote figcaption{
     color: var(--md-sys-color-on-error);
+}
+
+    /* IMPACT PAGE */
+
+    /* slogan */
+
+    #slogan{
+        background-color: var(--md-sys-color-primary);
+        background-image: url(./image/Vector3.svg);
+        background-size: cover;
+        background-position: center;
+        color: var(--md-sys-color-on-primary);
+    }
+
+    /* END OF IMPACT PAGE */
+
+/* BLOG SECTION */
+
+#blog-contents h5 {
+    color: var(--md-sys-color-error);
+}
+
+#blog-contents h6{
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents p{
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents button{
+    background-color: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    width: 150px;
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents button:hover,
+#blog-contents button:focus{
+    border: 1px solid var(--md-sys-color-primary);
+    color: var(--md-sys-color-primary);
+}
+
+#blog-contents .episodes {
+    background-color: var(--md-sys-color-surface);
+    
+}
+
+/* MENTORSHIP PAGE */
+
+#mentorship{
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.data-form .header{
+    background-color: var(--md-sys-color-on-secondary-fixed);
+    color: whitesmoke;
+}
+
+.data-form .record {
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* contact form */
+
+#contact-form {
+    background-color: #1b1b1f30;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+
+#contact-form .content {
+    background-color: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    max-width: 600px;
+    margin-top: 112px;
+}
+
+#contact-form h4{
+    color: var(--md-sys-color-primary);
+}
+
+#contact-form #close{
+    top: 10px;
+    right: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#contact-form #close:hover{
+    color: var(--md-sys-color-primary);
 }

@@ -13,7 +13,7 @@
     <title>Daniel Bamigbayan Website</title>
    
 </head>
-<body>
+<body class="position-relative">
   <header class="container-lg">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
@@ -27,8 +27,8 @@
               <div class="navbar-nav ms-lg-auto">
                 <a class="nav-link active text-center me-lg-3" aria-current="page" href="#">Home</a>
                 <a class="nav-link text-center me-lg-3" href="./myBio.html">My Bio</a>
-                <a class="nav-link text-center me-lg-3" href="#">Impact</a>
-                <a class="nav-link text-center me-lg-3" href="#">Blog</a>
+                <a class="nav-link text-center me-lg-3" href="./impact.html">Impact</a>
+                <a class="nav-link text-center me-lg-3" href="./blog.html">Blog</a>
                 <a class="nav-link btn btn-primary link-light" id="CTA">Work with me</a>
               </div>
             </div>
@@ -46,7 +46,7 @@
                   I help individuals and businesses reach their full potential.
                   Work with me and together, we will scale up your business or startup and improve your business processes.
               </p>
-              <button class="btn btn-primary btn-lg">Work with me</button>
+              <button id="WKM" class="btn btn-primary btn-lg">Work with me</button>
           </div>
           <div class="col-xl-6 col-md-5 col-sm-12 justify-content-center image-section">
               <img class="img-fluid ms-5" src="./image/hero.png" alt="">    
@@ -66,7 +66,7 @@
     <h2 class="mb-2 display-5 mb-5 container-lg">Making impact</h2>
     <div class="container-lg">
       <div class="row justify-content-center g-4">
-        <a href="#" class="col-12 col-md-4 p-5 p-md-4 tile">
+        <a href="./mentorshipwithdaniel.html" class="col-12 col-md-4 p-5 p-md-4 tile">
           <div class=" icons d-flex justify-content-center align-items-center rounded-circle mb-3 my-lg-4 mb-mb-4">
             <i class="fa-solid fa-person-chalkboard fs-3"></i>
           </div>
@@ -79,7 +79,7 @@
           </p>
           <button class="learnMore px-3 py-2">Learn more <i class="bi bi-arrow-right-circle ms-2"></i> </button>
         </a>
-        <a href="#" class="col-12 col-md-4 p-5 p-md-4 tile">
+        <a href="./blog.html" class="col-12 col-md-4 p-5 p-md-4 tile">
           <div class=" icons d-flex justify-content-center align-items-center rounded-circle mb-3 my-lg-4 mb-mb-4">
             <i class="bi bi-person-workspace fs-3"></i>
           </div>
@@ -195,7 +195,7 @@
         <p>
           Daniel is passionate about impact through innovation. He is a Director at Softplex Solutions, a software company and currently CEO at D-Pia Innovations, a Social Enterprise that seeks to drive inclusive ICT skill acquisition and solve social and business problems with technology through collaboration.
         </p>
-        <a type="button" href="#" class="px-3 py-2">Read my bio <i class="bi bi-arrow-right-circle ms-2"></i> </a>
+        <a type="button" href="./myBio.html" class="px-3 py-2">Read my bio <i class="bi bi-arrow-right-circle ms-2"></i> </a>
       </div>
     </div>
   </div>
@@ -243,7 +243,6 @@
   </div>
 
   <!-- END OF GET IN TOUCH -->
-    
 
   <!-- Footer -->
 
@@ -274,5 +273,41 @@
       </div>
     </div>
   </footer>
+
+  <div id="contact-form" class="container-fluid py-5 left-0">
+    <div class="container-lg content p-4 py-5 py-5 p-md-5 position-relative">
+        <i id="close" class="fa-solid fa-xmark position-absolute fs-1  "></i>
+        <h4 class="display-6 mb-4">How can i be of service?</h4>
+        <form class="row" >
+          <div class="mb-3 col-md-6 mb-4">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter full name">
+          </div>
+          <div class="mb-3 col-md-6 mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email address">
+          </div>
+          
+          <div class="mb-3 mb-4">
+            <label for="message" class="form-label">Message </label>
+            <textarea class="form-control" id="message" placeholder="Write a message " rows="5"></textarea>
+          </div>
+        
+          <div class="d-grid gap-2 d-block">
+            <button class="btn btn-primary" type="submit">Send application</button>
+          </div>
+        </form>
+    </div>
+  </div>
+ 
+
+  <script>
+    function scrollToInTouch() {
+      $('html, body').animate({
+        scrollTop: $('#In-Touch').offset().top
+      }, 800); // Adjust the scroll speed (in milliseconds) as desired
+    }
+  </script>
+  
 </body>
 </html>
