@@ -84,11 +84,7 @@ header a.nav-link.active{
 #hero .image-section{
     position: relative;
     overflow: none;
-    background-image: url(./image/arrow-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 29px;
-    background-position-y: center;
+    
 }
 
 .hero-text{
@@ -104,21 +100,28 @@ header a.nav-link.active{
     
 } */
 
+#hero .image-section > svg{
+    /* background-image: url(./images/hero.png) !important; */
+    position: absolute;
+    width: calc(300px + 20vw) !important;
+    max-height: 670px;
+    right: 0px;
+    top: -10px;
+    z-index: -10;
+}
+
 /* Media Queries */
 @media (max-width: 768px){
     .hero-text{
         /* font-size: calc(1rem); */
     }
     .image-section > svg{
-        right: -170px !important;
+
+        right: -129px !important;
         margin-top: -20px;
-        min-width: 500px;
     }
     .image-section{
         margin-top: -50px !important;
-    }
-    .image-section > img{
-        position: absolute !important;
     }
 
 }
