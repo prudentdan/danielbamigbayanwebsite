@@ -380,6 +380,35 @@ header a.nav-link.active{
     border: 1px solid var(--md-sys-color-outline-variant);
 }
 
+.stats{
+    z-index: 0;
+}
+
+.stats > img{
+    position: absolute;
+    z-index: -1;
+    right: 40px;
+    top: -87px !important;
+}
+.stats > h3, .stats > h4, .stats > p{
+    z-index: 22;
+    color: #fff;
+    margin: 0 !important;
+}
+
+.stats > h3{
+    font-weight: 600;
+    font-size: 48px;
+    font-family: Manrope;
+}
+.stats > h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.stats > p{
+    font-size: 14px;
+}
 /* contact form */
 
 #contact-form {
