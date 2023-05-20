@@ -387,7 +387,6 @@ header a.nav-link.active{
 .stats > img{
     position: absolute;
     z-index: -1;
-    right: 40px;
     top: -87px !important;
 }
 .stats > h3, .stats > h4, .stats > p{
@@ -408,6 +407,7 @@ header a.nav-link.active{
 
 .stats > p{
     font-size: 14px;
+    font-weight: 400;
 }
 /* contact form */
 
@@ -461,7 +461,13 @@ header a.nav-link.active{
         position: relative;
     }
    
-    .image-section > img{
+    .stats{
+        margin-bottom: 130px;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .stats:nth-last-of-type(1){
+        margin-bottom: unset;
     }
 
 }
