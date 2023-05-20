@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url('./style_guide/theme.css');
 
 :root{
@@ -9,33 +8,10 @@
     
 }
 
-html{
-    font-size: 16px;
-}
-
 body {
     background-color: var(--md-sys-color-surface) !important;
     color: var(--md-sys-color-on-surface) !important;
-    overflow: none;
-}
-
-/* OVERWRITTEN STYLES */
-
-.btn{
-    font-size: 1rem !important;
-    font-weight: 500 !important;
-    border-radius: 0 !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 8px !important;
-    height: 48px;
-}
-
-.btn > i{
-    font-size: 1.5rem;
-    padding: 0;
-    margin: 0;
+    
 }
 
 /* HEADER */
@@ -48,7 +24,7 @@ header a.nav-link.active{
 }
 
 #logo {
-    max-width: calc(40px + 5%) !important;
+    max-width: calc(48px + 4vw) !important;
 }
 #CTA {
     background-color: var(--md-sys-color-primary) !important;
@@ -77,27 +53,14 @@ header a.nav-link.active{
 
 #hero h1{
     color: var(--md-sys-color-on-surface) !important;
-    font-size: calc(40px + 1.8vw);
-    margin-top: 72px !important;
+    font-size: calc(48px + 2vw);
+    
 }
 
 #hero .image-section{
     position: relative;
     overflow: none;
-    background-image: url(./image/arrow-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50px;
-    background-position-y: center;
-    height: fit-content;
-}
-
-.hero-text{
-    font-size: calc(0.8rem + 0.5vw);
-}
-
-.image-section > img{
-    position: relative;
+    
 }
 
 /* #hero .image-section > img{
@@ -109,28 +72,283 @@ header a.nav-link.active{
     
 } */
 
-/* Media Queries */
-@media (max-width: 768px){
-    .hero-text{
-        /* font-size: calc(1rem); */
-    }
-    .image-section > svg{
-        right: -170px !important;
-        margin-top: -20px;
-        min-width: 500px;
-    }
-    .image-section{
-        background-position: 280px !important;
-    }
-   
-    .image-section > img{
+#hero .image-section > svg{
+    /* background-image: url(./images/hero.png) !important; */
+    position: absolute;
+    width: calc(300px + 20vw) !important;
+    max-height: 670px;
+    right: 0px;
+    top: -10px;
+    z-index: -10;
+}
+
+
+/* MAKING IMPACT */
+
+#makingImpact{
+    background-color: #1B1B1F;
+    color: #FFFF;
+}
+
+#makingImpact h2:first-child{
+    padding: 0;
+    color: #FFF;
+}
+
+#makingImpact .tile{
+    border: 1px solid var(--md-sys-color-outline);
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+#makingImpact .icons {
+    background-color: var(--md-sys-color-surface);
+    width: 64px !important;
+    height: 64px !important;
+    color:  var(--md-sys-color-on-surface);
+    /* margin-bottom: 20px; */
+}
+
+#makingImpact .tile .learnMore {
+    background-color: transparent;
+    border: 1px solid var(--md-sys-color-outline);
+    color: #FFF;
+    margin-top: auto !important;
+}
+
+#makingImpact .tile:hover{
+    background-color: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
+    
+}
+
+
+#makingImpact .tile:hover .icons{
+    background-color: var(--md-sys-color-on-surface);
+    color: var(--md-sys-color-on-tertiary-fixed-dim);
+}
+
+#makingImpact .tile:hover .learnMore{
+    
+    color: var(--md-sys-color-on-secondary);
+}
+
+ 
+
+#makingImpact .tile:nth-child(2){
+    background-color: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-secondary);
+    
+}
+#makingImpact .tile:nth-child(2):hover{
+    background-color: var(--md-sys-color-tertiary);
+}
+
+
+#makingImpact .tile:nth-child(2) .icons {
+    background-color: var(--md-sys-color-on-secondary);
+    color: var(--md-sys-color-secondary);
+    
+}
+
+#makingImpact .tile:nth-child(2) .learnMore {
+    color: var(--md-sys-color-on-secondary);
+    
+}
+
+#makingImpact .tile:nth-child(2):hover .icons {
+    color: var(--md-sys-color-tertiary);
+    
+}
+
+
+
+/* Services */
+
+#services p:first-child{
+    color: var(--md-sys-color-primary);
+}
+
+#services p:last-of-type {
+    color: var(--md-sys-color-outline);
+}
+
+
+/* ABOUT */
+
+
+#aboutD a{
+    width: fit-content;
+    background-color: transparent;
+    color: var(--md-sys-color-on-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    text-decoration: none;
+}
+#aboutD img{
+    aspect-ratio: 5/4 ;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+#aboutD a:hover{
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-primary);
+}
+
+
+/* IN-TOUCH */
+
+#In-Touch .content-section{
+    background-color: var(--md-sys-color-on-primary-fixed-variant);
+    background-image: url(./image/Vector.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--md-sys-color-primary-fixed);
+}
+
+/* Footer */
+
+#footer {
+    background-color: #1B1B1F;
+    
+}
+
+#footer a{
+    text-decoration: none;
+    color: #d2d2d2;
+    font-size: calc(16px);
+}
+#footer a:hover{
+    /* text-decoration: underline; */
+    color: var(--md-sys-color-primary-fixed-dim);
+}
+
+#footer .image-box{
+    max-width: 75px;
+}
+
+#footer .links a:first-of-type{
+    font-size: 14px;
+    color: #797979;
+}
+
+#footer .media i{
+    font-size: 28px;
+    margin-right: 12px;
+}
+
+
+/* MY BIO PAGE */
+
+/* QUOTE */
+
+#quote{
+    background-color: var(--md-sys-color-error);
+    background-image: url(./image/Vector2.svg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    color: var(--md-sys-color-on-error);
+}
+
+#quote figcaption{
+    color: var(--md-sys-color-on-error);
+}
+
+    /* IMPACT PAGE */
+
+    /* slogan */
+
+    #slogan{
+        background-color: var(--md-sys-color-primary);
+        background-image: url(./image/Vector3.svg);
+        background-size: cover;
+        background-position: center;
+        color: var(--md-sys-color-on-primary);
     }
 
+    /* END OF IMPACT PAGE */
+
+/* BLOG SECTION */
+
+#blog-contents h5 {
+    color: var(--md-sys-color-error);
 }
-@media (max-width: 500px){
-    .hero-text{
-        font-size: 1rem;
-    } .image-section{
-        background-position: 40px !important;
-    }
+
+#blog-contents h6{
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents p{
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents button{
+    background-color: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    width: 150px;
+    color: var(--md-sys-color-on-surface);
+}
+
+#blog-contents button:hover,
+#blog-contents button:focus{
+    border: 1px solid var(--md-sys-color-primary);
+    color: var(--md-sys-color-primary);
+}
+
+#blog-contents .episodes {
+    background-color: var(--md-sys-color-surface);
+    
+}
+
+/* MENTORSHIP PAGE */
+
+#mentorship{
+    background-color: var(--md-sys-color-surface-container-low);
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+.data-form .header{
+    background-color: var(--md-sys-color-on-secondary-fixed);
+    color: whitesmoke;
+}
+
+.data-form .record {
+    border: 1px solid var(--md-sys-color-outline-variant);
+}
+
+/* contact form */
+
+#contact-form {
+    background-color: #1b1b1f30;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+
+#contact-form .content {
+    background-color: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    max-width: 600px;
+    margin-top: 112px;
+}
+
+#contact-form h4{
+    color: var(--md-sys-color-primary);
+}
+
+#contact-form #close{
+    top: 10px;
+    right: 20px;
+    color: var(--md-sys-color-on-surface-variant);
+}
+
+#contact-form #close:hover{
+    color: var(--md-sys-color-primary);
 }
