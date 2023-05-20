@@ -87,12 +87,17 @@ header a.nav-link.active{
     background-image: url(./image/arrow-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 29px;
+    background-position: 50px;
     background-position-y: center;
+    height: fit-content;
 }
 
 .hero-text{
     font-size: calc(0.8rem + 0.5vw);
+}
+
+.image-section > img{
+    position: relative;
 }
 
 /* #hero .image-section > img{
@@ -115,15 +120,17 @@ header a.nav-link.active{
         min-width: 500px;
     }
     .image-section{
-        margin-top: -50px !important;
+        background-position: 280px !important;
     }
+   
     .image-section > img{
-        position: absolute !important;
     }
 
 }
 @media (max-width: 500px){
     .hero-text{
         font-size: 1rem;
+    } .image-section{
+        background-position: 40px !important;
     }
 }
