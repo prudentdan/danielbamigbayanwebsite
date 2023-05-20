@@ -204,12 +204,12 @@ header a.nav-link.active{
 
 /* Form */
 
-.form-control{
+.form-control, .form-select{
     height: 48px !important;
     border-radius: unset !important;
 }
 
-.form-control:focus, .form-control:focus-visible{
+.form-control:focus, .form-select:focus, .form-select:focus-visible, .form-control:focus-visible{
     box-shadow: unset !important;
 }
 
