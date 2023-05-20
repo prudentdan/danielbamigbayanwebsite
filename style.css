@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 @import url('./style_guide/theme.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
 :root{
     font-family: 'Manrope', sans-serif !important;
@@ -57,6 +58,13 @@ header a.nav-link.active{
 .navbar-toggler{
     /* fill: var(--md-sys-color-surface) !important ; */
     background-color: var(--md-sys-color-surface-variant) !important;
+    color: var(--md-sys-color-on-surface);
+}
+
+.navbar-toggler:focus-visible, .navbar-toggler:focus{
+    border: unset !important;
+    outline: unset !important;
+    box-shadow: unset !important;
 }
 
 /* HEADER */
@@ -194,7 +202,16 @@ header a.nav-link.active{
     
 }
 
+/* Form */
 
+.form-control{
+    height: 48px !important;
+    border-radius: unset !important;
+}
+
+.form-control:focus, .form-control:focus-visible{
+    box-shadow: unset !important;
+}
 
 /* Services */
 
@@ -397,8 +414,8 @@ header a.nav-link.active{
 }
 
 @media (max-width: 768px){
-    .hero-text{
-        /* font-size: calc(1rem); */
+    .hero-title{
+        margin-top: 10px;
     }
     .image-section > svg{
         right: -170px !important;
@@ -407,6 +424,12 @@ header a.nav-link.active{
     }
     .image-section{
         background-position: 280px !important;
+    }
+
+    #makingImpact{
+        margin-top: -40px;
+        z-index: 300;
+        position: relative;
     }
    
     .image-section > img{

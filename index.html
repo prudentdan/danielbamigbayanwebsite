@@ -20,16 +20,16 @@
             <a class="navbar-brand py-3" href="#">
               <img id="logo" src="./image/logo.png" alt="Daniel B logo" >
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler border-0" type="button" style="background: none !important;" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="bi bi-list" style="font-size: 2rem; color: var(--md-sys-color-on-surface);"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav ms-lg-auto">
+              <div class="navbar-nav ms-lg-auto gap-lg-4 gap-2">
                 <a class="nav-link active text-center me-lg-3" aria-current="page" href="#">Home</a>
                 <a class="nav-link text-center me-lg-3" href="./myBio.html">My Bio</a>
                 <a class="nav-link text-center me-lg-3" href="./impact.html">Impact</a>
                 <a class="nav-link text-center me-lg-3" href="./blog.html">Blog</a>
-                <a class="nav-link btn btn-primary link-light" id="CTA">Work with me</a>
+                <a class="nav-link btn btn-primary link-light px-4" id="CTA">Work with me <i class="bi bi-arrow-right-short"></i></a>
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
   <!-- End of Hero Section -->
 
   <!-- Making Impact -->
-  <div id="makingImpact" class=" container-fluid py-5 justify-content-center">
+  <div id="makingImpact" class=" container-fluid py-5 px-3 justify-content-center">
     <h2 class="mb-2 display-5 mb-5 container-lg">Making impact</h2>
     <div class="container-lg">
       <div class="row justify-content-center g-4">
@@ -112,7 +112,7 @@
 
   <!-- Consulting Services -->
 
-  <div id="services" class="container-lg py-5">
+  <div id="services" class="container-lg py-5 px-3">
     <h2 class="mb-2 display-5 mb-5">My consulting services</h2>
     <div class="row service-content">
       <div class="col-12 col-md-6 col-lg-4 mb-5">
@@ -175,8 +175,8 @@
   <!-- END OF CONSULTING SERVICES -->
 
   <!-- About Daniel -->
-  <div id="aboutD" class="container-lg py-5">
-    <h2 class="mb-2 display-5 mb-5">About Daniel Bamigbayan</h2>
+  <div id="aboutD" class="container-lg py-5 px-3">
+    <h2 class="mb-2 display-5" style="font-family: 'Manrope', sans-serif; font-weight: 700; margin-bottom: 38px !important;">About Daniel Bamigbayan</h2>
     <div class="row">
       <div class="col-12 col-md-6 d-flex align-items-center justify-content-md-center mb-4">
         <img class="img-fluid" src="./image/about.jpg" alt="">
@@ -210,29 +210,29 @@
         </p>
 
       </div>
-      <div class="col-12 col-md-6 p-5">
+      <div class="col-12 col-md-6 p-5 px-4">
         <h4 class="h4">Get in touch!</h4>
         <form>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="exampleInputName" class="form-label">Name</label>
-              <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp">  
+              <input type="email" class="form-control" placeholder="Your name" id="exampleInputName" aria-describedby="emailHelp">  
             </div>
             <div class="col-md-6  mb-3">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" class="form-control" placeholder="Your email" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
           </div>
           <div class="mb-3">
             <label for="subject" class="form-label">Subject</label>
-            <input type="email" class="form-control" id="subject" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="subject" placeholder="Message subject" aria-describedby="emailHelp">
           </div>
-          <div class="mb-3">
+          <div class="mb-3 pb-1">
             <label for="exampleMessage" class="form-label">Message</label>
-            <textarea class="form-control" placeholder="Leave a message here" id="exampleMessage" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Your message" id="exampleMessage" style="min-height: 150px;"></textarea>
           </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="d-grid mt-4">
+            <button type="submit" class="btn btn-primary">Send Message <i class="bi bi-send" style="font-size: .85rem;"></i></button>
           </div>
         </form>
       </div>
